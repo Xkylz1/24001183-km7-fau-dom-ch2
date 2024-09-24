@@ -1,0 +1,136 @@
+.custom-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.custom-list li {
+  position: relative;
+  padding-left: 2rem;
+  background-image: url("../assets/icons/checklist.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: 0 center; 
+  line-height: 1.8; 
+  margin-bottom: 16px;
+  font-size: 14px; 
+}
+
+
+.container-left {
+  margin-right: auto;
+  max-width: 50%;
+}
+.testimonial {
+  text-align: center;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+.testimonial h5 {
+  margin-top: 20px;
+  font-weight: bold;
+}
+.testimonial p {
+  font-style: italic;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+.brand-p-color {
+  background-color: #091b6f;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("../assets/icons/Left-button.png");
+}
+
+.carousel-control-next-icon {
+  background-image: url("../assets/icons/Right-button.png");
+}
+
+.navbar-brand {
+  color: #0d28a6;
+  background-color: #0d28a6;
+}
+
+.btn-success {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #5cb85f;
+  --bs-btn-border-color: #5cb85f;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #5cb85f;
+  --bs-btn-hover-border-color: #5cb85f;
+  --bs-btn-focus-shadow-rgb: 60, 153, 110;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #5cb85f;
+  --bs-btn-active-border-color: ##5cb85f;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #5cb85f;
+  --bs-btn-disabled-border-color: #5cb85f;
+  border-radius: 2px;
+
+  /* button font */
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.nav-link {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.row.fix-row {
+  --bs-gutter-x: 0;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  color: #000;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h5{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+h6{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card-body > * {
+  margin: 16px 0;
+}
+
+.fw-link{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.max-image{
+  max-height: 80px;
+}
