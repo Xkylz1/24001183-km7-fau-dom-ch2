@@ -140,8 +140,9 @@ h6 {
   z-index: 1; /* Ensures it appears above the other sections */
   text-align: center;
 }
-
+/* 
 .bg-primary {
   padding: 20px; /* Optional: Adds padding to the box */
-  border-radius: 10px; /* Optional: Adds rounded corners */
-}
+  /* border-radius: 10px; Optional: Adds rounded corners */
+/* }  */
+/*
