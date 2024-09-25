@@ -1,18 +1,20 @@
 // console.log("Implement servermu disini yak 😝!");
-const express = require('express');
-const path = require('path');
+const express = require("express");
+const path = require("path");
 const app = express();
 
 // Serve static files from the 'public' directory
-app.use(express.static(path.join(__dirname, '../public')));
+// app.use(express.static('public'));
+
+app.use(express.static(path.join(__dirname, "../public")));
 
 // Handle requests to the root ("/") by sending index.html automatically
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/index.html'));
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/index.html"));
 });
 
 // Set up the server to listen on a specific port
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Server is running on http://localhost:${PORT}`);
 });
