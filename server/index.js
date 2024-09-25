@@ -9,10 +9,16 @@ const app = express();
 app.use(express.static(path.join(__dirname, "../public")));
 
 // Handle requests to the root ("/") by sending index.html automatically
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../public/index.html"));
+// app.get("/", (req, res) => {
+//   res.sendFile(path.join(__dirname, "../public/index.html"));
+// });
+app.get("/findcar", (req, res) => {
+  console.log("test");
+  res.sendFile(path.join(__dirname, "../public/pages/findcar.html"));
 });
-
+// app.get("/findcar", (req, res) => {
+//   res.sendFile(path.join(__dirname, "public", "pages", "findcar.html"));
+// });
 // Set up the server to listen on a specific port
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
