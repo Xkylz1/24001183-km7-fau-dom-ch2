@@ -1,10 +1,129 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Binar Car Rental</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    /> -->
+
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <h1>Halo</h1>
+    <section id="hero" style="background-color: #f1f3ff">
+      <!--navbar-->
+      <nav
+        class="navbar navbar-expand-lg text-bg-light"
+        style="background-color: #f1f3ff !important"
+      >
+        <div class="container">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <img src="/icons/logo.svg" alt="brand logo" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#our-services">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#why-us">Why Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimony">Testimonial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link justiy-content-end" href="#faq">FaQ</a>
+              </li>
+              <li>
+                <button class="btn btn-success" type="submit">Register</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero section -->
+      <section class="container text-start mt-5">
+        <div class="row">
+          <div
+            class="col-sm-6 mb-3 mb-sm-0 align-middle flex-column justify-content-center"
+          >
+            <h1>Sewa & Rental Mobil Terbaik di kawasan Banjarbaru</h1>
+            <p>
+              Selamat datang di Binar Car Rental. Kami menyediakan mobil
+              kualitas terbaik dengan harga terjangkau. Selalu siap melayani
+              kebutuhanmu untuk sewa mobil selama 24 jam.
+            </p>
+            <button class="btn-success btn float-start" onclick="pa">
+              Mulai Sewa Mobil
+            </button>
+          </div>
+
+          <div class="col-sm-6">
+            <img
+              class="container d-flex justify-content-center"
+              src="/images/img_car.png"
+              alt="car"
+            />
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- footer  -->
+    <footer id="footer" class="container my-5">
+      <div class="row justify-content-between g-4">
+        <div class="col-sm-auto">
+          <p>Jalan Suroyo No. 161 Mayangan Kota<br />Probolonggo 672000</p>
+          <p>binarcarrental@gmail.com</p>
+          <p>081-233-334-808</p>
+        </div>
+
+        <div class="col-sm-auto fw-link">
+          <ul>
+            <li class="mt-0">Our services</li>
+            <li>Why Us</li>
+            <li>Testimonial</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+
+        <div class="col-sm-auto">
+          <p>Connect with us</p>
+          <div class="d-flex gap-2">
+            <img src="/icons/icon_facebook.svg" alt="facebook" />
+            <img src="/icons/icon_instagram.svg" alt="instagram" />
+            <img src="/icons/icon_twitter.svg" alt="twitter" />
+            <img src="/icons/icon_mail.svg" alt="mail" />
+            <img src="/icons/icon_twitch.svg" alt="twitch" />
+          </div>
+        </div>
+        <div class="col-sm-auto">
+          <p>Copyright Binar 2022</p>
+          <img src="/icons/logo.svg" alt="brand logo" />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
