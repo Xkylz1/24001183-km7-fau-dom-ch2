@@ -204,3 +204,7 @@ h6 {
   line-height: 20px;
   height: 100px;
 }
+
+.offcanvas-half {
+  width: 50% !important;
+}
