@@ -180,3 +180,27 @@ h6 {
 .find-car-fc {
   color: #3c3c3c;
 }
+
+.cars {
+  margin-top: 30px;
+}
+
+.cars .card {
+  width: 340px;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+.cars .card .card-img-top {
+  width: 320px;
+  height: 180px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.cars .card .cars__p {
+  font-size: 14px;
+  line-height: 20px;
+  height: 100px;
+}
