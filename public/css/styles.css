@@ -134,15 +134,49 @@ h6 {
   max-height: 80px;
 }
 
-#findTool {
-  position: relative; /* Keeps the element in the document flow */
-  margin-top: -50px; /* Adjust this value to control how much it overlaps with the section above */
-  z-index: 1; /* Ensures it appears above the other sections */
+/* #findTool {
+  position: relative;
+  margin-top: -50px;
+  z-index: 1;
   text-align: center;
+  background-color: #fff;
+} */
+
+/* .bg-primary {
+  padding: 20px;
+  border-radius: 10px;
+} */
+.search {
+  margin-top: -50px;
 }
-/* 
-.bg-primary {
-  padding: 20px; /* Optional: Adds padding to the box */
-  /* border-radius: 10px; Optional: Adds rounded corners */
-/* }  */
-/*
+
+.search .search__card {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+.search .search__card .search__time .form-select {
+  background-image: url("/icons/fi_clock.svg");
+  background-size: 20px auto;
+}
+
+.search .search__card .form-select:hover {
+  border: 1px solid #5cb85f;
+  border-radius: 2px;
+}
+
+.search .search__card .form-select option:hover,
+.search .search__card .form-select option:checked {
+  background: #c9e7ca;
+  color: #5cb85f;
+}
+
+.place-holder-fc {
+  color: #8a8a8a;
+}
+
+.find-car-fc {
+  color: #3c3c3c;
+}
