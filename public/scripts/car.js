@@ -45,33 +45,33 @@ class Car {
     );
     return `
 
-        <div class="card px-4 py-4">
-            <img src="${this.image}" class="card-img-top w-100">
-            <div class="card-body">
+        <div class="card px-3 px-sm-4 py-4">
+            <img src="${this.image}" class="card-img-top w-auto">
+            <div class="card-body px-0">
                 <h5 class="card-title fs-6">${this.manufacture}/${this.model}</h5>
                 <h5 class="card-title fs-5 fw-bold">Rp ${formattedPrice} / hari</h5>
-                <p class="cars__p">${this.description}</p>
+                <p class="cars__p d-sm-block d-none">${this.description}</p>
                 <div class="row">
-                    <div class="px-0 col-1 ">
+                    <div class="px-0 col-auto ">
                         <img src="icons/fi_users.svg" width="20px" alt="" srcset="">
                     </div>
-                    <div class="px-0 col-10 ms-lg-2 ">
+                    <div class="px-0 col-auto ms-2">
                         ${this.capacity} orang
                     </div>
                 </div>
                 <div class="row mt-2">
-                    <div class="px-0 col-1">
+                    <div class="px-0 col-auto">
                         <img src="icons/fi_settings.svg" width="20px" alt="" srcset="">
                     </div>
-                    <div class="px-0 col-10 ms-lg-2">
+                    <div class="px-0 col-auto ms-2">
                         ${this.transmission}
                     </div>
                 </div>
                 <div class="row mt-2 mb-4">
-                    <div class="px-0 col-1">
+                    <div class="px-0 col-auto">
                         <img src="icons/fi_calendar.svg" width="20px" alt="" srcset="">
                     </div>
-                    <div class="px-0 col-10 ms-lg-2">
+                    <div class="px-0 col-auto ms-2">
                         Tahun ${this.year}
                     </div>
                 </div>
