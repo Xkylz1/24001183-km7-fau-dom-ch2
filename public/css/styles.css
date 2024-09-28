@@ -210,22 +210,20 @@ h6 {
 .offcanvas-half {
   width: 50% !important;
 }
-/* Style the date input field */
+
 input[type="date"] {
-  font-size: 12px; /* Adjust font size */
-  border-radius: 5px; /* Adjust border radius */
-  color: #3c3c3c; /* Font color */
-  background-color: #fff; /* Background color */
+  font-size: 12px;
+  border-radius: 5px;
+  color: #3c3c3c;
+  background-color: #fff;
 }
 
-/* Placeholder workaround for input[type="date"] */
 input[type="date"]::before {
   content: attr(placeholder);
-  color: #888; /* Placeholder color */
-  font-size: 12px; /* Placeholder font size */
+  color: #888;
+  font-size: 12px;
 }
 
-/* Remove placeholder when the input is focused */
 input[type="date"]:focus::before,
 input[type="date"]:valid::before {
   content: "";
