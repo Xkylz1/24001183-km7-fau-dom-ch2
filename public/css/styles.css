@@ -175,10 +175,12 @@ h6 {
 
 .place-holder-fc {
   color: #8a8a8a;
+  font-size: 12px;
 }
 
 .find-car-fc {
   color: #3c3c3c;
+  font-size: 12px;
 }
 
 .cars {
@@ -207,4 +209,24 @@ h6 {
 
 .offcanvas-half {
   width: 50% !important;
+}
+/* Style the date input field */
+input[type="date"] {
+  font-size: 12px; /* Adjust font size */
+  border-radius: 5px; /* Adjust border radius */
+  color: #3c3c3c; /* Font color */
+  background-color: #fff; /* Background color */
+}
+
+/* Placeholder workaround for input[type="date"] */
+input[type="date"]::before {
+  content: attr(placeholder);
+  color: #888; /* Placeholder color */
+  font-size: 12px; /* Placeholder font size */
+}
+
+/* Remove placeholder when the input is focused */
+input[type="date"]:focus::before,
+input[type="date"]:valid::before {
+  content: "";
 }
