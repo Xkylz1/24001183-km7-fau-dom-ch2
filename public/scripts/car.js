@@ -40,13 +40,16 @@ class Car {
   }
 
   render() {
+    const formattedPrice = new Intl.NumberFormat("id-ID").format(
+      this.rentPerDay
+    );
     return `
 
         <div class="card px-4 py-4">
             <img src="${this.image}" class="card-img-top w-100">
             <div class="card-body">
                 <h5 class="card-title fs-6">${this.manufacture}/${this.model}</h5>
-                <h5 class="card-title fs-5 fw-bold">Rp ${this.rentPerDay} / hari</h5>
+                <h5 class="card-title fs-5 fw-bold">Rp ${formattedPrice} / hari</h5>
                 <p class="cars__p">${this.description}</p>
                 <div class="row">
                     <div class="px-0 col-1 ">

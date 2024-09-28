@@ -18,7 +18,7 @@ app.loadButton.addEventListener("click", () => {
   app.loadFilter().then(() => app.run());
 });
 
-// app.init();
+app.init();
 
 const loadButton = document.getElementById("load-btn");
 const tipeDriver = document.getElementById("tipeDriver");
