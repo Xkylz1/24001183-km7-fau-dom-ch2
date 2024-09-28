@@ -175,10 +175,12 @@ h6 {
 
 .place-holder-fc {
   color: #8a8a8a;
+  font-size: 12px;
 }
 
 .find-car-fc {
   color: #3c3c3c;
+  font-size: 12px;
 }
 
 .cars {
@@ -186,7 +188,7 @@ h6 {
 }
 
 .cars .card {
-  width: 340px;
+  width: auto;
   -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
@@ -207,4 +209,22 @@ h6 {
 
 .offcanvas-half {
   width: 50% !important;
+}
+
+input[type="date"] {
+  font-size: 12px;
+  border-radius: 5px;
+  color: #3c3c3c;
+  background-color: #fff;
+}
+
+input[type="date"]::before {
+  content: attr(placeholder);
+  color: #888;
+  font-size: 12px;
+}
+
+input[type="date"]:focus::before,
+input[type="date"]:valid::before {
+  content: "";
 }
