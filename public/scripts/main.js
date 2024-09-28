@@ -19,3 +19,30 @@ app.loadButton.addEventListener("click", () => {
 });
 
 // app.init();
+
+const loadButton = document.getElementById("load-btn");
+const tipeDriver = document.getElementById("tipeDriver");
+const tanggal = document.getElementById("tanggal");
+const waktuJemput = document.getElementById("waktuJemput");
+const jumlahPenumpang = document.getElementById("jumlahPenumpang");
+
+function validateForm() {
+  const isTipeDriverSelected = tipeDriver.value !== "default";
+  const isTanggalSelected = tanggal.value !== "";
+  const isWaktuSelected = waktuJemput.value !== "false";
+
+  if (isTipeDriverSelected && isTanggalSelected && isWaktuSelected) {
+    loadButton.disabled = false;
+  } else {
+    loadButton.disabled = true;
+  }
+}
+
+tipeDriver.addEventListener("change", validateForm);
+tanggal.addEventListener("change", validateForm);
+waktuJemput.addEventListener("change", validateForm);
+jumlahPenumpang.addEventListener("input", validateForm);
+
+window.addEventListener("load", () => {
+  validateForm();
+});
